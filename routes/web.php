@@ -38,7 +38,6 @@ Route::post('/register', [UserController::class, 'register'])->name('user.regist
 Route::post('/login', [UserController::class, 'login'])->name('user.login');
 Route::post('/logout', [UserController::class, 'logout'])->name('user.logout');
 
-
 Route::get('/edit/{id}', [PostController::class, 'edit'])->name('post.edit');
 
 Route::post('/post', [PostController::class, 'create'])->name('post.create');
